@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羽球冷知識：揭秘球場前世今生 | M11408905</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;700&family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            black: '#050505',
+                            darker: '#0a0a0f',
+                            gray: '#1a1a2e',
+                            neonGreen: '#00ffaa',
+                            neonBlue: '#00d4ff',
+                            neonPurple: '#9d00ff',
+                            text: '#e0e0e0'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Orbitron', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        glow: {
+                            'from': { 'text-shadow': '0 0 5px #00ffaa, 0 0 10px #00ffaa' },
+                            'to': { 'text-shadow': '0 0 20px #00ffaa, 0 0 30px #00d4ff' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(26, 26, 46, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 170, 0.1);
+        }
+        .cyber-border {
+            position: relative;
+        }
+        .cyber-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ffaa, transparent);
+        }
+        .shuttlecock-bg {
+            position: fixed;
+            top: -10%;
+            right: -10%;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #00ffaa 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        ::selection {
+            background: #00ffaa;
+            color: #050505;
+        }
+        .article-content p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #cccccc;
+        }
+        .article-content h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00ffaa;
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .article-content h3::before {
+            content: '>';
+            margin-right: 0.5rem;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Decorative Elements -->
+    <div class="shuttlecock-bg animate-float">
+        <svg width="600" height="600" viewBox="0 0 100 100" fill="currentColor">
+            <path d="M50 10 L60 40 L40 40 Z M40 45 L60 45 L65 85 L35 85 Z" />
+        </svg>
+    </div>
+
+    <!-- Header / Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-panel border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+            <div class="font-display font-black text-xl tracking-widest text-cyber-neonGreen">
+                NEO-BADMINTON <span class="text-white text-xs font-light block tracking-normal">LOG: M11408905</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-accent font-semibold text-sm tracking-tighter">
+                <span class="hover:text-cyber-neonGreen transition-colors cursor-pointer">EVOLUTION</span>
+                <span class="hover:text-cyber-neonGreen transition-colors cursor-pointer">TECH</span>
+                <span class="hover:text-cyber-neonGreen transition-colors cursor-pointer">FUTURE</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 z-10">
+                <div class="inline-block px-3 py-1 mb-6 border border-cyber-neonGreen/30 bg-cyber-neonGreen/10 rounded-full text-cyber-neonGreen text-xs font-bold tracking-widest animate-pulse">
+                    ARCHIVE // M11408905
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-display font-black leading-tight mb-8">
+                    【羽球冷知識】<br/>
+                    <span class="accent-gradient">不只是綠色地板！</span>
+                </h1>
+                <p class="text-lg text-gray-400 font-light max-w-xl mb-8 border-l-4 border-cyber-neonBlue pl-6 italic">
+                    揭秘羽球場的前世今生與未來黑科技。當競技遇上賽博龐克，這一塊長方形空間藏著多少祕密？
+                </p>
+            </div>
+            <div class="lg:col-span-5 relative group">
+                <div class="absolute -inset-4 bg-gradient-to-r from-cyber-neonGreen to-cyber-neonBlue opacity-20 blur-xl group-hover:opacity-40 transition duration-1000"></div>
+                <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                    <img src='https://opal.google/board/blobs/9f1a56e0-bdea-4644-af5a-776d7d277ad0' alt='Badminton Technology Banner' class="w-full aspect-[4/5] object-cover scale-105 group-hover:scale-110 transition duration-700" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-cyber-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="text-xs font-display text-cyber-neonBlue mb-2 tracking-[0.2em]">VISUAL_INTERFACE_v2.0</div>
+                        <div class="h-1 w-full bg-gray-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-cyber-neonBlue w-2/3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="max-w-4xl mx-auto px-6 pb-32">
+        <article class="glass-panel p-8 md:p-16 rounded-[2rem] shadow-inner border-white/5 relative overflow-hidden">
+            <!-- Background HUD decorations -->
+            <div class="absolute top-0 right-0 p-4 opacity-20 pointer-events-none">
+                <div class="text-[10px] font-display text-right text-cyber-neonGreen">
+                    SCANNING DATA...<br/>
+                    LATENCY: 14MS<br/>
+                    ZONE: COURT_01
+                </div>
+            </div>
+
+            <div class="article-content font-body">
+                <p class="text-xl font-light text-cyber-neonBlue/80 mb-12">
+                    當我們踏入羽球場，換上球鞋、拿起球拍，面對那一塊熟悉的「綠色地墊」時，很少有人會停下來思考：為什麼這塊長方形的空間是現在這個樣子？對於一個愛思考的球友來說，羽球場不只是運動的體現，它更集結了空間設計、歷史演進、材料物理學，甚至是當代的社會學議題。
+                </p>
+
+                <p>今天，我們就以知識份子的視角，輕鬆聊聊這塊「神聖長方形」背後那些鮮為人知的故事。</p>
+
+                <div class="my-12 p-8 border border-cyber-neonGreen/20 bg-cyber-neonGreen/5 rounded-xl">
+                    <h3 class="mt-0">一、 空間的哲學：這塊「長方形」到底有什麼魔力？</h3>
+                    <p>我們習以為常的羽球場，其實是一場精密的數字遊戲。標準場地長 13.4 公尺，但最有趣的是它的「變形」機制。當你是「孤單單打」時，寬度是 5.18 公尺；而進入「熱鬧雙打」模式，寬度則擴張至 6.10 公尺。這幾十公分的邊界移動，決定了防守策略的質變，也是無數球員汗水與眼淚的生死線。</p>
+                    <p>向上看，現代羽球場對「自由」的定義有著極高要求。國際比賽標準的天花板高度至少要 12 公尺——這相當於四層樓高。為什麼要這麼高？因為羽球是世界上球速最快（擊球瞬間）、也是運動軌跡最立體的球類之一。沒有這片「空域」，你精心策劃的高遠球就會在半空「撞頂」，那可是會瞬間打破競技美感的。</p>
+                    <p>至於那些 40 釐米寬的白色或黃色邊線，它們在裁判眼中是判定勝負的法律語言，在球員眼中則是心理博弈的物理極限。</p>
+                </div>
+
+                <h3>二、 黑歷史：以前的球場竟然是「沙漏型」？</h3>
+                <p>如果你穿越回 19 世紀的羽球場，你可能會以為自己進錯了棚。</p>
+                <div class="flex flex-col md:flex-row gap-8 items-center my-8">
+                    <div class="flex-1">
+                        <p>羽球最早在印度（當時稱作 Poona）發跡，後來被英國軍官帶回母國。最初，這項貴族運動是在英國莊園的大廳裡進行的。然而，當時的建築結構往往在牆邊設有門柱，為了避開這些障礙物，早期的球場設計非常有創意地變成了「沙漏形」——也就是中間球網處往內縮，兩頭底線處較寬。</p>
+                    </div>
+                    <div class="w-full md:w-1/3 p-4 glass-panel border-cyber-neonPurple/30 rounded-lg text-center">
+                        <div class="text-4xl mb-2">⌛</div>
+                        <div class="text-xs font-display text-cyber-neonPurple tracking-widest uppercase">Ancient Layout</div>
+                        <div class="text-[10px] text-gray-500 mt-1 uppercase">Hourglass Shape (Pre-1901)</div>
+                    </div>
+                </div>
+                <p>直到 1901 年，隨著運動的規範化，才正式將「沙漏」修正為現在我們看到的「長方形」。同時，因為羽球太輕，哪怕是一絲微風都能改變球路，這項運動徹底告別了草地，躲進了室內。這種「與風隔離」的演進，也奠定了現代室內運動之王的基礎。</p>
+
+                <h3>三、 專業控的深度：頂級球場的「隱藏細節」</h3>
+                <p>為什麼在水泥地上打球會膝蓋痛，但在專業場地卻能健步如飛？這背後是材料工程的功勞。頂級球館採用「彈性木地板」搭配「專業 PVC 地墊」的雙重結構。木地板提供支撐與彈性，PVC 則負責止滑與進一步的衝擊吸收，這種配置是為了在追求競技極限的同時，給予關節最溫柔的保護。</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+                    <div class="p-6 border border-white/10 rounded-2xl hover:border-cyber-neonBlue transition-colors group">
+                        <div class="text-cyber-neonBlue font-display mb-2 group-hover:animate-pulse">SIDE LIGHTING</div>
+                        <p class="text-sm m-0">專業球場，燈具絕對不會掛在你的頭頂正上方。這種「側面照明」是為了防止球員在仰頭殺球時，被直射光線「閃瞎」。</p>
+                    </div>
+                    <div class="p-6 border border-white/10 rounded-2xl hover:border-cyber-neonGreen transition-colors group">
+                        <div class="text-cyber-neonGreen font-display mb-2 group-hover:animate-pulse">DARK WALL CONTRAST</div>
+                        <p class="text-sm m-0">為什麼很多球館牆面是深綠色或深藍色？為了與「白色羽球」形成最高對比度，讓你的大腦能以最快速度鎖定球的位置。</p>
+                    </div>
+                </div>
+
+                <h3>四、 球友碎碎念：現代球場的恩怨情仇</h3>
+                <p>然而，在現實世界中，尋找完美的球場往往是一場修行。</p>
+                <p>在都會區，「租場地」這件事已經演變成一場「硬科技大戰」。專業球友們可能沒被世界冠軍打敗，卻被「場地黃牛」的自動化腳本打敗了。那種搶票難度堪比偶像演唱會呈現的無力感，是當代球友心中共同的痛。</p>
+                <p>更別提那些「大雜燴標線」的綜合體育館了。同一片地板上疊加了籃球、羽球、排球線，跑位時彷彿在玩「立體幾何迷宮」。再加上籃球鞋留下的磨損痕跡，常讓追求極致腳感的羽球人感到無奈。這是在追求荷包（公立場館）與品質（私立球館）之間的永恆掙扎。</p>
+
+                <div class="relative mt-16 p-1 bg-gradient-to-r from-cyber-neonBlue via-cyber-neonPurple to-cyber-neonGreen rounded-3xl overflow-hidden">
+                    <div class="bg-cyber-darker rounded-[1.4rem] p-8 md:p-12">
+                        <h3 class="mt-0 text-white !before:content-none">五、 未來預言：當羽球場遇上「賽博龐克」</h3>
+                        <p>未來的羽球場會是什麼樣子？我想，那會是一個充滿賽博龐克感的科幻空間。</p>
+                        <p>「AI 鷹眼」將不再是頂級賽事的專利。未來，社區球館的影像系統就能幫你判定 in 或 out，甚至在你打完球後，手機 App 就會產出一份你的移動軌跡與球速分析報告。</p>
+                        <p>我也非常期待「LED 智慧地板」的普及。想像一下，地板線條可以隨意切換，不再有雜亂的標線，甚至能在比賽中即時顯示球的落點數據。而「Badminton Lounge」的概念則會讓球館變成一種新型態的社交中心——打完球後，直接在場邊進行運動復健，或者在充滿設計感的休息區喝杯咖啡。</p>
+                        <p>最後，伴隨著環保意識的抬頭，「綠色球場」將實至名歸。使用回收材料製成的地墊、自動感應的節能溫控，讓我們在揮汗如雨的同時，也能與這顆星球和諧共存。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="mt-16 pt-8 border-t border-white/10 flex flex-col items-center text-center">
+                <div class="text-cyber-neonGreen font-display font-black text-2xl mb-4 tracking-tighter">END OF LOG.</div>
+                <p class="max-w-xl text-gray-500 text-sm">
+                    羽球場，從一個受限於門柱的「沙漏」，演變成今日融合科技與美學的精密空間，它的未來依然充滿想像。下次踏上那塊綠色地板時，不妨多看它一眼——這可是一塊承載了百年人類智慧的奇妙長方形。
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <!-- Floating UI Widgets -->
+    <div class="fixed bottom-8 right-8 flex flex-col gap-4">
+        <button class="w-12 h-12 rounded-full glass-panel border-cyber-neonBlue flex items-center justify-center text-cyber-neonBlue hover:bg-cyber-neonBlue hover:text-cyber-black transition-all shadow-lg shadow-cyber-neonBlue/20">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+        </button>
+        <div class="hidden lg:block glass-panel px-4 py-2 rounded-lg border-white/10">
+            <div class="text-[10px] text-gray-500 font-display">SYST_TIME</div>
+            <div id="clock" class="text-xs text-cyber-neonGreen font-display tabular-nums">00:00:00</div>
+        </div>
+    </div>
+
+    <script>
+        // Simple Clock script
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.getHours().toString().padStart(2, '0') + ':' + 
+                               now.getMinutes().toString().padStart(2, '0') + ':' + 
+                               now.getSeconds().toString().padStart(2, '0');
+            document.getElementById('clock').textContent = timeString;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Scroll Reveal effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            document.querySelector('.shuttlecock-bg').style.transform = `translateY(${scrolled * 0.1}px) rotate(${scrolled * 0.05}deg)`;
+        });
+    </script>
+</body>
+</html>
